@@ -5,9 +5,8 @@ import { CreateGithubDto } from './dto/create-github.dto';
 import { UpdateGithubDto } from './dto/update-github.dto';
 
 @Injectable()
-export class GithubService {
-	private repository:string = "https://api.github.com/repos/cjcarlosgc/fulltimeforce-challenge"
-	// private repository:string = "https://api.github.com/repos/jhuaraya/fulltimeforce-task"
+export class GithubService {	
+	private repository:string = "https://api.github.com/repos/jhuaraya/fulltimeforce-task"
 	constructor(private httpService: HttpService) {		
 	}
 	getCommits(){		
